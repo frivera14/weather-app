@@ -1,8 +1,10 @@
 header {
-    font-size: 48px;
+    font-size: 55px;
     color: aliceblue;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
+    margin-bottom: 15px;
+    
 }
 
 body { 
@@ -11,8 +13,10 @@ body {
 }
 
 .searchbar {
-    align-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-bottom: 15px;
+    display: flex;
 }
 
+.container, .card {
+    margin-bottom: 15px;
+}
