@@ -8,7 +8,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>What's the weather?</title>
+    <title>Cloudy</title>
 </head>
 
 <body>
@@ -18,11 +18,11 @@
 
     <main>
         <div class="searchbar">
-            <input class="input is-rounded is-medium" type="text" placeholder="Search for your cities...">
-            <button class="button is-link is-rounded is-medium">Search</button>
+            <input id="city" class="input is-rounded is-medium" type="text" placeholder="Search for your cities...">
+            <button id="search" class="button is-link is-rounded is-medium">Search</button>
         </div>
 
-        <div class="container">
+        <div class="buttons">
             <nav class="breadcrumb is-medium">
                 <button class="button is-rounded is-medium" href="#">City 1</button>
                 <button class="button is-rounded is-medium" href="#">City 2</button>
@@ -34,16 +34,18 @@
 
         <div class="card">
             <header class="card-header">
-              <p class="card-header-title">
-                Main City
+              <p id="main" class="card-header-title">
               </p>
               <button class="card-header-icon">
               </button>
             </header>
             <div class="card-content">
               <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                <p id="temp"></p>
+                <br>
+                <p id ="wind"></p>
+                <br>
+                <p id ="humid"></p>
                 <br>
                 
               </div>
@@ -51,50 +53,11 @@
           </div>
 
         <div class="tile is-ancestor">
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title">Hello World</p>
-                <p class="subtitle">What is up?</p>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title">Foo</p>
-                <p class="subtitle">Bar</p>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title">Third column</p>
-                <p class="subtitle">With some content</p>
-                <div class="content">
-                  <p>.</p>
-                </div>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title">Fourth Day</p>
-                <p class="subtitle">With some content</p>
-                <div class="content">
-                  <p>.</p>
-                </div>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title">Fifth Day</p>
-                <p class="subtitle">With some content</p>
-                <div class="content">
-                  <p>.</p>
-                </div>
-              </article>
-            </div>
           </div>
     </main>
 
 
-
+<script src="script.js"></script>
 </body>
 
 </html>
