@@ -1,6 +1,7 @@
 var searchBar = document.getElementById("city")
 var mainDisp = document.getElementById("main")
 var buttonSearch = document.getElementById("search")
+var dateBelow = document.getElementById("date")
 var temp = document.getElementById("temp")
 var wind = document.getElementById("wind")
 var humid = document.getElementById("humid")
@@ -91,7 +92,8 @@ var getRepoMain = function (cityName) {
 
 var showData = function (data) {
 
-    mainDisp.innerHTML = `${theCity} <img src='http://openweathermap.org/img/wn/${data.daily[0].weather[0].icon}@2x.png'/>` + new Date(data.current.dt * 1000).toLocaleDateString()
+    mainDisp.innerHTML = `${theCity} <img src='http://openweathermap.org/img/wn/${data.daily[0].weather[0].icon}@2x.png'/>` 
+    dateBelow.textContent = new Date(data.current.dt * 1000).toLocaleDateString()
     temp.textContent = "Temperature: " + data.current.temp + ' °C'
     wind.textContent = "Wind Speed: " + data.current.wind_speed + " kmh"
     humid.textContent = "Humidity: " + data.current.humidity + "%"
@@ -137,31 +139,5 @@ var showData = function (data) {
 }
 
 
-// var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?q=" + cityName + "&exclude=hourly,minutely,current,alerts&units=metric&appid=b6266937053d15c59e91212045eef46e"
-
-// fetch(apiUrl)
-// .then(function (response) {
-// if (response.ok) {
-// return response.json()
-// } else {
-// alert("Error: " + response.statusText);
-// throw "Error"
-// }
-// })
-// .then(function (data) {
-// console.log(data)
-// })
-
-// };
-
 
 buttonSearch.addEventListener('click', getWeather)
-
-// create variables for main card and search bar
-
-// create fetch request for main data
-
-// create event listeners for fetch function with button
-
-// create local storage for search history
-
