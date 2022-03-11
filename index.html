@@ -2,62 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Cloudy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Cloudy</title>
 </head>
 
 <body>
-    <header class="has-background-link">
-        <h1>Cloudy <ion-icon name="partly-sunny"></ion-icon> </h1>
-    </header>
+  <header class="has-background-link">
+    <h1>Cloudy <ion-icon name="partly-sunny"></ion-icon>
+    </h1>
 
-    <main>
-        <div class="searchbar">
-            <input id="city" class="input is-rounded is-medium" type="text" placeholder="Search for your cities...">
-            <button id="search" class="button is-link is-rounded is-medium">Search</button>
+  </header>
+
+  <main>
+    <div class="searchbar">
+      <input id="city" class="input is-rounded is-medium" type="text" placeholder="Search for your cities...">
+      <button id="search" class="button is-link is-rounded is-medium">Search</button>
+    </div>
+    <div id="history" class="buttons">
+
+    </div>
+
+    <div class="card">
+      <header class="card-header">
+        <p id="main" class="card-header-title">
+        </p>
+        <button class="card-header-icon">
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <p id="temp"></p>
+          
+          <p id="wind"></p>
+          
+          <p id="humid"></p>
+          
+          <p id="uvindex"></p>
+
         </div>
+      </div>
+    </div>
 
-        <div class="buttons">
-            <nav class="breadcrumb is-medium">
-                <button class="button is-rounded is-medium" href="#">City 1</button>
-                <button class="button is-rounded is-medium" href="#">City 2</button>
-                <button class="button is-rounded is-medium" href="#">City 3</button>
-                <button class="button is-rounded is-medium" href="#">City 4</button>
-                <button class="button is-rounded is-medium" href="#">City 5</button>
-              </nav>
-        </div>
-
-        <div class="card">
-            <header class="card-header">
-              <p id="main" class="card-header-title">
-              </p>
-              <button class="card-header-icon">
-              </button>
-            </header>
-            <div class="card-content">
-              <div class="content">
-                <p id="temp"></p>
-                <br>
-                <p id ="wind"></p>
-                <br>
-                <p id ="humid"></p>
-                <br>
-                
-              </div>
-            </div>
-          </div>
-
-        <div class="tile is-ancestor">
-          </div>
-    </main>
+    <div id="tiles" class="tile is-ancestor">
+    </div>
+  </main>
 
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -38,3 +38,9 @@
                 </div>
               </article>
             </div>
+
+                  <button class="button is-rounded is-medium" href="#">City 1</button>
+      <button class="button is-rounded is-medium" href="#">City 2</button>
+      <button class="button is-rounded is-medium" href="#">City 3</button>
+      <button class="button is-rounded is-medium" href="#">City 4</button>
+      <button class="button is-rounded is-medium" href="#">City 5</button>
